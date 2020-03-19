@@ -1,0 +1,34 @@
+.m-slider {
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.z-pre,
+.z-nex {
+    width: 100px;
+    overflow: hidden;
+}
+
+.z-pre img,
+.z-nex img {
+    height: 350px;
+}
+
+.z-pre img {
+    float: right;
+}
+
+.z-active {
+    overflow: hidden;
+    flex: 1;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+}
+
+.z-active img {
+    width: 100%;
+}

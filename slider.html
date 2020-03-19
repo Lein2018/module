@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./slider.css">
+    <title>Slider</title>
+</head>
+
+<body>
+    <div id="slider"></div>
+    <script src="./utils.js"></script>
+    <script src="./slider.js"></script>
+    <script>
+        var imgArr = ['image/1.jpg',
+            'image/2.jpg',
+            'image/3.jpg',
+            'image/4.jpg',
+            'image/5.jpg',
+            'image/6.jpg'
+        ]
+        var slider = new Slider({
+            el: '#slider',
+            imgArr: imgArr
+        })
+    </script>
+</body>
+
+</html>
