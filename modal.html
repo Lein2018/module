@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./modal.css">
+</head>
+<body>
+    <button class="u-trigger"> show modal</button>
+
+    
+    </div>
+    <script src="./modal.js"></script>
+    <script>
+        var modal = new Modal();
+        modal.on('confirm',function(){
+            console.log('confirm')
+        })
+        modal.on('cancel',function(){
+            console.log('cancel')
+        })
+document.querySelector('.u-trigger').addEventListener('click',function(){
+    modal.show('弹窗内容')
+})
+    </script>
+</body>
+</html>
